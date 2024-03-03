@@ -37,7 +37,7 @@ body {
 
 .logo {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -54,9 +54,9 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  /* background: url();
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./karthik-swarnkar-AoNvwL-Dmtw-unsplash.jpg");
   background-size: cover;
-  background-position: center; */
+  background-position: center;
   display: flex;
   align-items: center;
   padding: 5rem 10% 0;
@@ -128,13 +128,13 @@ body {
   border-radius: 50%;
   background-position: center;
   background-size: cover;
-  box-shadow: 0 0 500px #0ef;
+  /* box-shadow: 0 0 500px #0ef; */
   /* margin-right: 5rem; */
 
   transition-property: box-shadow ;
   transition-duration: 1.5s;
 }
 .image:hover{
-    box-shadow: 0 0 10px cyan, 0 0 50px cyan, 0 0 200px cyan, 0 0 400px cyan;
+    box-shadow: 0 0 100px cyan;
     
 }
