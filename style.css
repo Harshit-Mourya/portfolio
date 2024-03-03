@@ -46,6 +46,7 @@ body {
 .navbar a:hover {
   color: #0ef;
   transform: scale(1.1);
+  text-decoration: underline solid #0ef;
 }
 
 .home {
@@ -53,9 +54,9 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url();
+  /* background: url();
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   display: flex;
   align-items: center;
   padding: 5rem 10% 0;
@@ -110,8 +111,30 @@ body {
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: 800;
+  transition-property: box-shadow ;
+  transition-duration: 1s;
 }
 
 .btn-box:hover {
   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.image {
+    background: url(20221027_204257-01.jpeg);
+
+  border: 5px solid #eee;
+  height: 30rem;
+  width: 25rem;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 500px #0ef;
+  /* margin-right: 5rem; */
+
+  transition-property: box-shadow ;
+  transition-duration: 1.5s;
+}
+.image:hover{
+    box-shadow: 0 0 10px cyan, 0 0 50px cyan, 0 0 200px cyan, 0 0 400px cyan;
+    
 }
