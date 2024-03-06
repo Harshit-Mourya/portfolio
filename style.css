@@ -57,7 +57,7 @@ body {
   position: relative;
   width: 100%;
   justify-content: space-between;
-  height: 100vh;
+  height: 95vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./karthik-swarnkar-AoNvwL-Dmtw-unsplash.jpg");
   background-size: cover;
@@ -74,6 +74,9 @@ body {
 .home-content h3 {
   font-size: 2rem;
   font-weight: 700;
+  opacity: 0;
+  animation: slideTop2 1s ease forwards;
+  animation-delay: .7s;
 }
 
 .home-content h3 span {
@@ -89,10 +92,16 @@ body {
   font-weight: 700;
   margin: -3px 0;
   /* color: #0ef; */
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .home-content p {
   font-size: 1.3rem;
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: .7s;
 }
 
 .home-links a {
@@ -106,6 +115,7 @@ body {
   color: white;
   margin: 1.8rem 0.9rem 1.8rem 0;
   background: transparent;
+  animation: appear 5s ease forwards;
 }
 
 .home-links a:hover {
@@ -126,6 +136,8 @@ body {
   font-weight: 800;
   transition-property: box-shadow;
   transition-duration: 1s;
+  animation: appear 5s ease forwards;
+
 }
 
 .btn-box:hover {
@@ -180,6 +192,36 @@ body {
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop2 {
+  0% {
+    transform: translateY(-70px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    
+    opacity: 0;
+  }
+  100% {
+    
     opacity: 1;
   }
 }
